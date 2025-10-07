@@ -1,2 +1,14 @@
-# HGC_Asociados
-HGC &amp; Asociados es una firma estudiantil de contadores en formación, dedicada al estudio, análisis y práctica de la contaduría pública. Somos un equipo que une talento, disciplina y visión, con el propósito de convertirnos en profesionales que aporten confianza y valor a la sociedad.
+# 🌐 HGC & Asociados - Sitio Web Oficial
+
+Sitio web oficial de HGC & Asociados, firma estudiantil de contaduría pública.
+
+## 🚀 Características
+
+- **5 páginas independientes** con diseño responsive
+- **Sistema de navegación** fluido entre páginas
+- **Formularios de contacto** funcionales
+- **Filtrado de proyectos** por categorías
+- **Animaciones y efectos** modernos
+- **Optimizado para GitHub Pages**
+
+## 📂 Estructura del Proyecto
