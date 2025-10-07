@@ -1,4 +1,4 @@
-# 🌐 HGC & Asociados - Sitio Web Oficial
+# 🌐 HGC  Asociados - Sitio Web Oficial
 
 Sitio web oficial de HGC & Asociados, firma estudiantil de contaduría pública.
 
