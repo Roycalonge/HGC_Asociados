@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - HGC & Asociados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-img"><a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/sxrVDzkQ/Whats-App-Image-2025-09-10-at-1-08-04-PM-modified.png' border='0' alt='Whats-App-Image-2025-09-10-at-1-08-04-PM-modified'/></a></div>
+                <div class="logo-text">HGC & Asociados</div>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Inicio</a></li>
+                <li><span>Contacto</span></li>
+            </ul>
+            <h1 class="page-title">Conectemos y Colaboremos</h1>
+            <p class="page-subtitle">Estamos aquí para responder tus preguntas, escuchar tus ideas y explorar oportunidades de colaboración académica y profesional.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="container">
+            <!-- Grid de Contacto -->
+            <section class="contact-grid-section">
+                <div class="contact-grid">
+                    <!-- Formulario -->
+                    <div class="contact-form-container">
+                        <h2 class="section-title">Envíanos un Mensaje</h2>
+                        
+                        <div class="form-success" id="formSuccess">
+                            ✅ ¡Mensaje enviado con éxito! Te contactaremos pronto.
+                        </div>
+                        
+                        <div class="form-error" id="formError">
+                            ❌ Error al enviar el mensaje. Por favor, intenta nuevamente.
+                        </div>
+
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Nombre Completo *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="email">Correo Electrónico *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="subject">Asunto *</label>
+                                <select class="form-control form-select" id="subject" name="subject" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="colaboracion">Colaboración Académica</option>
+                                    <option value="unirse">Unirse al Equipo</option>
+                                    <option value="proyecto">Consulta sobre Proyectos</option>
+                                    <option value="soporte">Soporte Técnico</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="message">Mensaje *</label>
+                                <textarea class="form-control" id="message" name="message" placeholder="Describe tu consulta o propuesta..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <span id="submitText">Enviar Mensaje</span>
+                                <span id="submitLoading" style="display: none;">⏳ Enviando...</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Información de Contacto -->
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <h3>Correo Electrónico</h3>
+                            <ul class="contact-details">
+                                <li>
+                                    <a href="mailto:hgc.asociados@universidad.edu">
+                                        hgc.asociados@universidad.edu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:director.hgc@universidad.edu">
+                                        director.hgc@universidad.edu
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">📱</div>
+                            <h3>Telegram & WhatsApp</h3>
+                            <ul class="contact-details">
+                                <li>
+                                    <a href="https://t.me/HGC_Asociados" target="_blank">
+                                        @HGC_Asociados
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://t.me/HGC_Operativo" target="_blank">
+                                        @HGC_Operativo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://wa.link/b82rr9" target="_blank">
+                                        +57 300 123 4567
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">🏢</div>
+                            <h3>Ubicación Física</h3>
+                            <ul class="contact-details">
+                                <li>Facultad de Contaduría Pública</li>
+                                <li>Universidad [Nombre]</li>
+                                <li>Bloque C, Oficina 304</li>
+                                <li>Horario: L-V 8:00 AM - 6:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Unirse al Equipo -->
+            <section class="join-team-section">
+                <h2 class="section-title">¿Te gustaría unirte a nuestro equipo?</h2>
+                <p class="join-subtitle">Buscamos estudiantes comprometidos con la excelencia académica y el trabajo colaborativo.</p>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎓</div>
+                        <h4>Desarrollo Profesional</h4>
+                        <p>Amplía tus conocimientos y habilidades en un entorno colaborativo.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🤝</div>
+                        <h4>Trabajo en Equipo</h4>
+                        <p>Aprende a colaborar efectivamente en proyectos multidisciplinarios.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💼</div>
+                        <h4>Experiencia Práctica</h4>
+                        <p>Aplica conocimientos teóricos en casos reales y proyectos concretos.</p>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-primary" onclick="showJoinForm()">
+                        🚀 Solicitar Unirse al Equipo
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HGC & Asociados</h3>
+                    <p>Firma estudiantil de contaduría pública comprometida con la excelencia académica y la formación integral.</p>
+                    <div class="social-links">
+                        <a href="mailto:hgc.asociados@universidad.edu" class="social-link">📧</a>
+                        <a href="https://t.me/HGC_Asociados" class="social-link">💬</a>
+                        <a href="#" class="social-link">📁</a>
+                        <a href="#" class="social-link">📱</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">🏠 Inicio</a></li>
+                        <li><a href="nosotros.html">👥 Nosotros</a></li>
+                        <li><a href="proyectos.html">📊 Proyectos</a></li>
+                        <li><a href="portafolio.html">🖥️ Portafolio</a></li>
+                        <li><a href="contacto.html">📞 Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hgc.asociados@universidad.edu">📧 hgc.asociados@universidad.edu</a></li>
+                        <li><a href="https://t.me/HGC_Asociados">📱 Telegram: @HGC_Asociados</a></li>
+                        <li><a href="#">🏢 Facultad de Contaduría Pública</a></li>
+                        <li><a href="contacto.html">📞 Formulario de Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HGC & Asociados. Todos los derechos reservados. | Versión 3.0 - Sistema Integrado Completo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

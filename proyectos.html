@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - HGC & Asociados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-img">HGC</div>
+                <div class="logo-text">HGC & Asociados</div>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="proyectos.html" class="active">Proyectos</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Inicio</a></li>
+                <li><span>Proyectos</span></li>
+            </ul>
+            <h1 class="page-title">Nuestros Proyectos Académicos</h1>
+            <p class="page-subtitle">Explora el trabajo académico especializado que desarrollamos en cada área de estudio, aplicando los conocimientos teóricos en casos prácticos reales.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="container">
+            <!-- Filtros -->
+            <section class="projects-filter-section">
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="contabilidad">Contabilidad</button>
+                    <button class="filter-btn" data-filter="administracion">Administración</button>
+                    <button class="filter-btn" data-filter="economia">Economía</button>
+                    <button class="filter-btn" data-filter="comunicacion">Comunicación</button>
+                    <button class="filter-btn" data-filter="filosofia">Filosofía</button>
+                </div>
+            </section>
+
+            <!-- Grid de Proyectos -->
+            <section class="projects-grid-section">
+                <div class="projects-grid">
+                    <!-- Proyecto Contabilidad -->
+                    <div class="project-card" data-category="contabilidad">
+                        <div class="project-image">📊</div>
+                        <div class="project-content">
+                            <span class="project-tag">Contabilidad</span>
+                            <h3>Análisis NIIF para PYMES</h3>
+                            <p>Implementación práctica de Normas Internacionales de Información Financiera para pequeñas y medianas empresas, incluyendo estudio de casos reales y desarrollo de manuales de procedimientos.</p>
+                            <div class="project-meta">
+                                <span class="project-date">📅 Oct 2024</span>
+                                <span class="project-status">✅ Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Administración -->
+                    <div class="project-card" data-category="administracion">
+                        <div class="project-image">💼</div>
+                        <div class="project-content">
+                            <span class="project-tag">Administración</span>
+                            <h3>Plan de Negocios Empresarial</h3>
+                            <p>Desarrollo integral de planes de negocio con enfoque en sostenibilidad, análisis de mercado, proyecciones financieras y estrategias de implementación para empresas locales.</p>
+                            <div class="project-meta">
+                                <span class="project-date">📅 Sep 2024</span>
+                                <span class="project-status">✅ Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Economía -->
+                    <div class="project-card" data-category="economia">
+                        <div class="project-image">📈</div>
+                        <div class="project-content">
+                            <span class="project-tag">Economía</span>
+                            <h3>Estudio de Mercado Local</h3>
+                            <p>Investigación de mercado aplicada a empresas reales de nuestro entorno económico, incluyendo análisis de competencia, comportamiento del consumidor y tendencias del sector.</p>
+                            <div class="project-meta">
+                                <span class="project-date">📅 Nov 2024</span>
+                                <span class="project-status">🔄 En Progreso</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Comunicación -->
+                    <div class="project-card" data-category="comunicacion">
+                        <div class="project-image">✍️</div>
+                        <div class="project-content">
+                            <span class="project-tag">Comunicación</span>
+                            <h3>Informes Técnicos Empresariales</h3>
+                            <p>Elaboración de informes profesionales con redacción técnica, estructura argumentativa y adaptación a diferentes contextos organizacionales y audiencias específicas.</p>
+                            <div class="project-meta">
+                                <span class="project-date">📅 Ago 2024</span>
+                                <span class="project-status">✅ Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Filosofía -->
+                    <div class="project-card" data-category="filosofia">
+                        <div class="project-image">🤔</div>
+                        <div class="project-content">
+                            <span class="project-tag">Filosofía</span>
+                            <h3>Ética en la Práctica Contable</h3>
+                            <p>Análisis de dilemas éticos en la profesión contable, desarrollo de códigos de conducta y estudio de casos sobre responsabilidad profesional y transparencia.</p>
+                            <div class="project-meta">
+                                <span class="project-date">📅 Dic 2024</span>
+                                <span class="project-status">📝 Planificación</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Constitución -->
+                    <div class="project-card" data-category="constitucion">
+                        <div class="project-image">⚖️</div>
+                        <div class="project-content">
+                            <span class="project-tag">Constitución</span>
+                            <h3>Marco Legal del Contador Público</h3>
+                            <p>Estudio de la Ley 43 de 1990 y normativa complementaria que regula el ejercicio profesional del contador público en Colombia, incluyendo análisis jurisprudencial.</p>
+                            <div class="project-meta">
+                                <span class="project-date">📅 Jul 2024</span>
+                                <span class="project-status">✅ Completado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Estadísticas -->
+            <section class="stats-section">
+                <h2 class="section-title">Nuestro Impacto</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">24+</div>
+                        <div class="stat-label">Proyectos Completados</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Casos de Estudio</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Tasa de Aprobación</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Áreas de Especialización</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Proceso de Trabajo -->
+            <section class="process-section">
+                <h2 class="section-title">Nuestra Metodología</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Análisis de Requisitos</h3>
+                        <p>Estudio detallado de los objetivos y criterios de evaluación de cada trabajo académico.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Planificación Colaborativa</h3>
+                        <p>Distribución de tareas según competencias y disponibilidad de cada miembro.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Investigación y Desarrollo</h3>
+                        <p>Aplicación de metodologías de investigación y herramientas especializadas.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Revisión de Calidad</h3>
+                        <p>Evaluación integral por el auditor interno antes de la entrega final.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HGC & Asociados</h3>
+                    <p>Firma estudiantil de contaduría pública comprometida con la excelencia académica y la formación integral.</p>
+                    <div class="social-links">
+                        <a href="mailto:hgc.asociados@universidad.edu" class="social-link">📧</a>
+                        <a href="https://t.me/HGC_Asociados" class="social-link">💬</a>
+                        <a href="#" class="social-link">📁</a>
+                        <a href="#" class="social-link">📱</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">🏠 Inicio</a></li>
+                        <li><a href="nosotros.html">👥 Nosotros</a></li>
+                        <li><a href="proyectos.html">📊 Proyectos</a></li>
+                        <li><a href="portafolio.html">🖥️ Portafolio</a></li>
+                        <li><a href="contacto.html">📞 Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hgc.asociados@universidad.edu">📧 hgc.asociados@universidad.edu</a></li>
+                        <li><a href="https://t.me/HGC_Asociados">📱 Telegram: @HGC_Asociados</a></li>
+                        <li><a href="#">🏢 Facultad de Contaduría Pública</a></li>
+                        <li><a href="contacto.html">📞 Formulario de Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HGC & Asociados. Todos los derechos reservados. | Versión 3.0 - Sistema Integrado Completo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+/* Contact Grid */
+.contact-grid-section {
+    margin-bottom: 4rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 4rem;
+}
+
+/* Contact Form */
+.contact-form-container {
+    background: var(--hgc-white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.contact-form-container .section-title {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--hgc-black);
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--hgc-light-gray);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: var(--font-primary);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--hgc-gold);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236B7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5em;
+}
+
+.btn-primary {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Form Messages */
+.form-success {
+    background: #D4EDDA;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.form-error {
+    background: #F8D7DA;
+    color: #721C24;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: none;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-card {
+    background: var(--hgc-white);
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--hgc-gold), var(--hgc-dark-gold));
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    color: var(--hgc-gold);
+}
+
+.contact-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--hgc-black);
+    font-family: var(--font-secondary);
+}
+
+.contact-details {
+    list-style: none;
+}
+
+.contact-details li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.contact-details a {
+    color: var(--hgc-gray);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: var(--hgc-gold);
+}
+
+/* Join Team Section */
+.join-team-section {
+    background: var(--hgc-light-gray);
+    padding: 4rem 0;
+    margin: 4rem 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.join-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.benefit-card {
+    background: var(--hgc-white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    text-align: center;
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    color: var(--hgc-gold);
+}
+
+.benefit-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--hgc-black);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-form-container {
+        padding: 2rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
